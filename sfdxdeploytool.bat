@@ -221,13 +221,13 @@ echo.
 echo Validating metadata in destination org...
 echo.
 if "%testLevel%"=="RunSpecifiedTests" (
-    echo sfdx force:mdapi:deploy -c -f "%zipFolderLocation%/unpackaged.zip" -u %destinationOrgAlias% -w %waitTime% -l RunSpecifiedTests -r %runTests%
+    echo sfdx force:mdapi:deploy -c -f "%zipFolderLocation%\unpackaged.zip" -u %destinationOrgAlias% -w %waitTime% -l RunSpecifiedTests -r %runTests%
     echo.
-    call sfdx force:mdapi:deploy -c -f "%zipFolderLocation%/unpackaged.zip" -u %destinationOrgAlias% -w %waitTime% -l RunSpecifiedTests -r %runTests%
+    call sfdx force:mdapi:deploy -c -f "%zipFolderLocation%\unpackaged.zip" -u %destinationOrgAlias% -w %waitTime% -l RunSpecifiedTests -r %runTests%
 ) else (
-    echo sfdx force:mdapi:deploy -c -f "%zipFolderLocation%/unpackaged.zip" -u %destinationOrgAlias% -w %waitTime% -l %testLevel%
+    echo sfdx force:mdapi:deploy -c -f "%zipFolderLocation%\unpackaged.zip" -u %destinationOrgAlias% -w %waitTime% -l %testLevel%
     echo.
-    call sfdx force:mdapi:deploy -c -f "%zipFolderLocation%/unpackaged.zip" -u %destinationOrgAlias% -w %waitTime% -l %testLevel%
+    call sfdx force:mdapi:deploy -c -f "%zipFolderLocation%\unpackaged.zip" -u %destinationOrgAlias% -w %waitTime% -l %testLevel%
 )
 if %errorlevel%==1 (
     echo.
