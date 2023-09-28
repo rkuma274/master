@@ -1,8 +1,7 @@
-sourceOrg=CR1
-destinationOrg=PB1
+sourceOrg=HDFC
+destinationOrg=Rk1234
 package.xmlLocationToDeploy=metadata\package.xml
 folderLocationForFetchedZip=metadata
 waitTimeInMinutes=10
-testLevel=RunSpecifiedTests
-runTests=TemperatureConverterTest,LeadProcessorTest
+testLevel=RunLocalTests
 folderLocationToUndeploy=metadata\destructive
