@@ -1,0 +1,14 @@
+<template>
+    
+       <template for:each={students} for:item="std" for:index="index">
+           <p key={std.id}></p>
+           
+            <lightning-card key={std.id} variant="Narrow"  title={std.Email} icon-name="standard:contact" > 
+                {std.Name},
+                {std.Email},
+                {std.Age},
+            </lightning-card> 
+           </div>    
+       </template>
+    
+</template>
